@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{subProject}}/assets/styleadmin.css">
+</head>
+
+<body>
+    <aside class="side-nav" id="show-side-navigation1">
+        <!-- <i class="fa fa-bars close-aside hidden-sm hidden-md hidden-lg" data-close="show-side-navigation1"></i> -->
+        <div class="heading">
+            <img src="{{subProject}}/media/Administrateur de bien.png" alt="">
+            <div class="info ">
+                <h3><a href="#">Administrateur </a></h3>
+            </div>
+        </div>
+
+        <ul class="categories">
+            <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="{{subProject}}/admin"> Home</a></li>
+            <li class="service-menu-button"><i class="fa fa-support fa-fw"></i><a href="#"> Services</a>
+                <ul class="side-nav-dropdown">
+                    <li><a href="#" class="comptaButton" data-service="1">Comptabilité</a></li>
+                    <li><a href="#" class="juriButton" data-service="2">Juridique</a></li>
+                    <li><a href="#" class="secretButton" data-service="3">Secrétariat</a></li>
+                    <li><a href="#" class="logiButton" data-service="4">Logistique</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <p class="fa-off"><a class="" href="#"><i data-show="show-side-navigation1 "
+                class="fa fa-bars show-side-btn"></i></a>
+            </p>
+    <section id="contents">
+
+        <div class="welcome">
+            <div class="container-fluid">
+                <div class="row content">
+                    <div class=" col-10 col-sm-6 col-md-10 col-lg-10 col-xl-10">
+                        <div class="content">
+                            <h2 class="text-white datetime">date </h2>
+                        </div>
+                    </div>
+                    <div class=" col-2 col-sm-6 col-md-2 col-lg-2 col-xl-2">
+                        <div class="content butoon_logout">
+                            <h2 class="h5">Logout</h2>
+                            <a class="logo text-center " href="{{subProject}}/logout">
+                                <img class="lagout_button" src="{{subProject}}/media/ui.png" alt="" width="35" height="35">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="statistics  ">
+            <div class="container-fluid ">
+                <div class=" row ">
+                    <div class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="box">
+                            <img class="mon_logoadmin margin-monlogoadmin" src="{{subProject}}/media/heureuxadmin.png" alt=""
+                                width="80" height="80">
+                            <div class="info">
+                                <h3 class="margin-textmonlogo">Heureux</h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="box">
+                            <img class="mon_logoadmin margin-monlogoadmin" src="{{subProject}}/media/fatiguéadmin.png" alt=""
+                                width="80" height="80">
+
+                            <div class="info ">
+                                <h3 class="margin-textmonlogo">Fatigué</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="box">
+                            <img class="mon_logoadmin margin-monlogoadmin" src="{{subProject}}/media/stresséadmin.png" alt=""
+                                width="80" height="80">
+                            <div class="info">
+                                <h3 class="margin-textmonlogo">Stressé</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div>
+            <section class="charts">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- humeur du jour - bar -->
+                        <div id="graph-jour" class="col-md-12 mon-d-none">
+                            <div class="chart-container">
+                                <h3>Humeur du jour <span class="nom-service"></span></h3>
+                                <canvas id="myChart3"></canvas>
+                            </div>
+                        </div>
+
+                        <div id="graph-mois" class="col-md-12">
+                            <div class="chart-container">
+                                <h3>Humeur du mois</h3>
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                        <section class="statistics ">
+                            <div class="container-fluid ">
+                                <div class=" row ">
+                                    <div class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <div class="box">
+                                            <img class="mon_logoadmin margin-monlogoadmin" src="{{subProject}}/media/heureuxadmin.png"
+                                                alt="" width="80" height="80">
+                                            <div class="info">
+                                                <h3 class="margin-textmonlogo">Heureux</h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <div class="box">
+                                            <img class="mon_logoadmin margin-monlogoadmin" src="{{subProject}}/media/fatiguéadmin.png"
+                                                alt="" width="80" height="80">
+
+                                            <div class="info ">
+                                                <h3 class="margin-textmonlogo">Fatigué</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <div class="box">
+                                            <img class="mon_logoadmin margin-monlogoadmin" src="{{subProject}}/media/stresséadmin.png"
+                                                alt="" width="80" height="80">
+                                            <div class="info">
+                                                <h3 class="margin-textmonlogo">Stressé</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- humeur par jour dans le mois / crise cardiaque -->
+                        <div id="graph-cardio" class="col-md-12">
+                            <div class="chart-container">
+                                <h3>Humeur par jour du mois <span class="nom-service"></span></h3>
+                                <canvas id="myChart2"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </section>
+
+    <script src='https://code.jquery.com/jquery-latest.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+    
+    <script>
+        var subProject = "{{subProject}}";
+    </script>
+    <script src="{{subProject}}/views/admin.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>

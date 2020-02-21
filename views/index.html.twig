@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="{{subProject}}/assets/style.css">
+
+		<title>Document</title>
+	</head>
+
+	<body>
+
+		<div class="container-fluid">
+			<div class=" padding-container">
+				<div class="container-login container text-center">
+					<div class="row ">
+						<div class="col-12 ">
+							<form action="{{subProject}}/" method="post" autocomplete="off">
+								<div>
+									<div class="row">
+										<div class="col-12">
+											<img class="logo-softrh" src="{{subProject}}/media/SOFTRH.png" alt="">
+										</div>
+									</div>
+									<div class="row ">
+										<div class="col-12 col-sm-8 offset-sm-2 col-md-3 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4">
+											<div class="login__ligne">
+												<div class="row">
+													<svg class="login__icon name svg-icon" viewbox="0 0 20 20">
+														<path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8"/>
+													</svg>
+													<input type="text" class="login__input name text-center" placeholder="Username" name="identifiant"/>
+												</div>
+											</div>
+
+											<div class="login__ligne">
+												<div class="row">
+													<svg class="login__icon pass svg-icon" viewbox="0 0 20 20">
+														<path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0"/>
+													</svg>
+													<input type="password" class="login__input pass text-center" placeholder="Password" name="mdp"/>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4  pl-5 offset-xl-4 text-center">
+											<p class=" text-font h5">{{erreurMsg}}</p>
+										</div>
+									</div>
+									<div class="row ">
+										<div class="col-12 col-sm-8 offset-sm-2 col-md-12 offset-md-0 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4 pl-5 ">
+											<div class="position-button ">
+												<button type="submit" class="login__submit h3">
+													<span class="text-white">Sign in</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<!-- <script src="script.js"></script> -->
+
+
+	</body>
+
+</html>
+
